@@ -1,0 +1,155 @@
+html{
+    scroll-behavior:unset;
+}
+
+.Cuerpo{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(34, 34, 34);
+}
+
+.Video{
+    z-index: 900;
+    background-color: #f8b201;
+}
+
+video{
+    width: 100%;
+    max-width: 600px;
+}
+
+.Barra{
+    background-color: #c9d1d3;
+    width: 100%;
+    height: 5%;
+    align-items: center;
+    box-shadow: 0px 4px 3px rgba(0, 0, 0,.5);
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
+
+/* nav{
+    align-items: center;
+    background: #c9d1d3;
+    width: 100%;
+}
+
+nav ul{
+    text-align: center;
+    overflow: hidden;
+    list-style: none;
+}
+
+nav ul li{
+    margin-left: 7%;
+    margin-right: 3.9%;
+    float: left;
+    text-align: center;
+}
+
+nav ul li a{
+    margin-left: 7%;
+    color: #000;
+    padding: 20%;
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    background: #989899;
+} */
+
+.menu_bar{
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    header{
+        margin-top: 54px;
+    }
+
+    .Barra{
+        display: none;
+    }
+
+    .menu_bar{
+        box-shadow: 0px 4px 3px rgba(0, 0, 0,.5);
+        position: fixed;
+        top: 0;
+        display: block;
+        width: 100%;
+        z-index: 1000;
+        background: #ccc;
+    }
+
+    .menu_bar .bt-menu{
+        display: block;
+        padding: 20px;
+        background: #c9d1d3;
+        color: #000;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 15px;
+    }
+
+    .offcanvas_offcanvas-start{
+        background-color: #c9d1d3;
+    }
+
+    .menu_bar span{
+        float: right;
+        font-size: 25px;
+    }
+
+    @media screen and (max-width: 1000px) {
+
+        
+    }
+}
+
+.Portafolio{
+    margin: auto auto;
+    text-align: center;
+    background-color: #8ECAE6;
+}
+
+.grid-container{
+    margin-top: 2%;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 5%;
+    grid-row-gap: 10%;
+    justify-content:center;
+}
+
+.Habilidades{
+    text-align: center;
+    background-color: #219EBC;
+}
+
+.img-fluid{
+    margin: 20px;
+}
+
+
+.Experiencia{
+    text-align: center;
+    background-color: #023047;
+}
+
+.card-img-top{
+    height: 18%;
+}
+
+.Contacto{
+    text-align: center;
+    background-color: #FB8500;
+}
+
+.CC{
+    text-align: center;
+    color: white;
+    background-color: rgb(34, 34, 34);
+}
