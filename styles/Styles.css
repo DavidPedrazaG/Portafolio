@@ -29,38 +29,11 @@ video{
     top: 0;
 }
 
-/* nav{
-    align-items: center;
-    background: #c9d1d3;
-    width: 100%;
-}
-
-nav ul{
-    text-align: center;
-    overflow: hidden;
-    list-style: none;
-}
-
-nav ul li{
-    margin-left: 7%;
-    margin-right: 3.9%;
-    float: left;
-    text-align: center;
-}
-
-nav ul li a{
-    margin-left: 7%;
-    color: #000;
-    padding: 20%;
-    display: inline-block;
-    text-decoration: none;
-}
-
-nav ul li a:hover{
-    background: #989899;
-} */
-
 .menu_bar{
+    display: none;
+}
+
+.Portafolio2{
     display: none;
 }
 
@@ -104,11 +77,31 @@ nav ul li a:hover{
 
     @media screen and (max-width: 1000px) {
 
+        .Portafolio1{
+            display: none;
+        }
+
+        .Portafolio2{
+            margin: auto auto;
+            text-align: center;
+            background-color: #8ECAE6;
+        }
+
+        .Portafolio2{
+            display: block;
+        }
+
+        .Portafolio2 .card{
+            height: 100%;
+            width: 100%;
+            max-width: 250px;
+            max-height: 250px;
+        }
         
     }
 }
 
-.Portafolio{
+.Portafolio1{
     margin: auto auto;
     text-align: center;
     background-color: #8ECAE6;
