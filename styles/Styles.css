@@ -107,6 +107,20 @@ video{
     background-color: #8ECAE6;
 }
 
+.Portafolio1 .card-img-top{
+    height: 100%;
+    width: 100%;
+    max-height: 250px;
+    max-width: 350px;
+}
+
+.Portafolio2 .card-img-top{
+    height: 100%;
+    width: 100%;
+    max-height: 250px;
+    max-width: 250px;
+}
+
 .grid-container{
     margin-top: 2%;
     display: grid;
@@ -132,8 +146,11 @@ video{
     background-color: #023047;
 }
 
-.card-img-top{
-    height: 18%;
+.Experiencia .card-img-top{
+    height: 100%;
+    width: 100%;
+    max-height: 250px;
+    max-width: 350px;
 }
 
 .Contacto{
