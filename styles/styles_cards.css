@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+
+.cards{
+    margin-top: 3.5rem;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+}
+
+.post{
+    width: 300px;
+}
+
+.post video{
+    max-width: 300px;
+}
+
+.cards article{
+    transition: all 0.3s ease;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+}
+
+
+.cards article:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 30%);
+}
+
+.cards article h2, p{
+    margin: 1rem;
+}
+
+.video-card{
+    font-family: 'Roboto';
+    font-size: 12px;
+    background-color: #32BBE2;
+    margin-bottom: 1rem;
+    display: inline-block;
+    color: #fff;
+    padding: 8px 20px;
+    border: 3px solid #32BBE2;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.video-card:hover{
+    animation: pulsate 1s ease-in-out;
+}
+
+@keyframes pulsate {
+    0%{
+        box-shadow: 0 0 25px #75dffc;
+        box-shadow: 0 0 25px #0c5d74;
+    }
+    
+}
+
+.post-b{
+    display: none;
+    z-index: 8;
+}
+
+.post-b video{
+    max-width: 400px;
+}
+
+.cards-amplied{
+    width: 1200px;
+    z-index: 80;
+    margin: 0 auto; /*centrar*/
+    position: fixed;
+    top: 100px;
+    right: 0;
+    left: 0;
+
+}
+
+.post-b video{
+    max-width: 800px;
+    margin-top: auto;
+    padding: 0;
+}
+
+.cards-amplied article{
+    transition: all 0.3s ease;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
+    background-color: #fff;
+    margin: 1rem 0;
+    border-radius: 0.5rem;
+    padding: 0.25rem 0;
+}
+
+.cards-amplied article p{
+    margin: 15px; /*Arriba derecha abajo izquierda*/
+    padding: 30px 15px 5px;/*(Dos valores)Vertical Horizontal*//*(Tres valores)Superior Horizontal Inferior*//*(Un valor) Todos los lados*/
+    height: 400px;
+    width: 350px;
+    overflow: scroll; /*contenido fuera del elemento*/
+}
+
+.cards-amplied article:hover{
+    box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 30%);
+}
+
+.cards-amplied article h2, p{
+    margin: 1rem;
+}
+
+.cards-amplied span img{
+    position: relative;
+    width: 15px;
+    margin-left: 23rem;
+    top: 1rem;
+    cursor: pointer;
+    z-index: 10;
+
+}
+
+.cards-amplied span a{
+    border: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+@keyframes pulsate {
+}
+
+@media (max-width:768px) {
+    .cards{
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+    .post-b{
+        max-width: 400px;
+        position: fixed;
+        top: 100px;
+        right: 0;
+        left: 80px;
+        
+    }
+
+    .post-b video{
+        display: none;
+    }
+
+    .post-b h2{
+        visibility: hidden;
+    }
+
+    .post-b img{
+        display: block;
+    }
+
+    .post-b p{
+        margin-top: -5px;
+        overflow: scroll;
+    }
+}
