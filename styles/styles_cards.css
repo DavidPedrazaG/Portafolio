@@ -3,16 +3,16 @@
 .cards{
     margin-top: 3.5rem;
     display: flex;
-    gap: 50px;
+    gap: 100px;
     justify-content: center;
 }
 
 .post{
-    width: 300px;
+    width: 350px;
 }
 
 .post video{
-    max-width: 300px;
+    max-width: 350px;
 }
 
 .cards article{
@@ -36,6 +36,7 @@
     font-family: 'Roboto';
     font-size: 12px;
     background-color: #32BBE2;
+    margin-top: 1rem;
     margin-bottom: 1rem;
     display: inline-block;
     color: #fff;
@@ -71,7 +72,7 @@
     z-index: 80;
     margin: 0 auto; /*centrar*/
     position: fixed;
-    top: 100px;
+    top: 30px;
     right: 0;
     left: 0;
 
@@ -94,11 +95,11 @@
 }
 
 .cards-amplied article p{
-    margin: 15px; /*Arriba derecha abajo izquierda*/
-    padding: 30px 15px 5px;/*(Dos valores)Vertical Horizontal*//*(Tres valores)Superior Horizontal Inferior*//*(Un valor) Todos los lados*/
+    margin: 15px; 
+    padding: 30px 15px 5px;
     height: 400px;
     width: 350px;
-    overflow: scroll; /*contenido fuera del elemento*/
+    overflow: scroll;
 }
 
 .cards-amplied article:hover{
@@ -125,8 +126,8 @@
     background-color: #fff;
 }
 
-@keyframes pulsate {
-}
+/* @keyframes pulsate {
+} */
 
 @media (max-width:768px) {
     .cards{
@@ -135,9 +136,9 @@
     }
 
     .post-b{
-        max-width: 400px;
+        max-width: 300px;
         position: fixed;
-        top: 100px;
+        top: 30px;
         right: 0;
         left: 80px;
         
@@ -153,10 +154,16 @@
 
     .post-b img{
         display: block;
+        top: -2rem;
+        left: -6rem;
     }
 
-    .post-b p{
-        margin-top: -5px;
+    .cards-amplied article p{
+        margin: 3px;
+        margin-top: -2rem;
+        padding: -.5rem -5rem 2rem;
+        height: 400px;
+        width: 270px;
         overflow: scroll;
     }
 }

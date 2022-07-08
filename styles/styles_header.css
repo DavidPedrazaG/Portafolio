@@ -134,16 +134,12 @@ li:last-child:hover{
     #check:checked ~ ul{
         left: 0;
         transition: all .25s;
+        white-space:unset;
+        overflow-y: hidden;
     }
 
     .cards-amplied{
         max-width: 500px;
     }
 
-}
-
-@media (max-width:500px) {
-    body{
-        margin-right: -25rem;
-    }
 }

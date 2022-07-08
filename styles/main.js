@@ -3,12 +3,11 @@
 var contador = 1;
 var style = document.createElement('style');
 var card = document.createElement('style');
+var contadormenu = 1;
 
 function detectId(id) {
     if(contador == 1){
         style.innerHTML = `
-        html{
-        }
         body {
             white-space:unset;
             overflow-y: hidden;
@@ -69,9 +68,3 @@ function detectId(id) {
         document.head.appendChild(card);
     }
 }
-
-// function main(){
-//     $('.video-card').click(function(){
-        
-//     });
-// }
