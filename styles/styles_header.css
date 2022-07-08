@@ -143,3 +143,9 @@ li:last-child:hover{
         overflow-x: hidden;
       }
 }
+
+@media (max-width:350px) {
+    .video-header{
+        max-width: 250px;
+    }
+}
