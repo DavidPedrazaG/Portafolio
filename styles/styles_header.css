@@ -20,7 +20,7 @@ body{
 }
 
 .video-header video{
-    max-width: 500px;
+    max-width: 460px;
     z-index: 5;
 }
 
@@ -28,10 +28,6 @@ body{
     z-index: 10;
     top: 0;
     position: sticky;
-}
-
-.menu header{
-    width: 100%;
 }
 
 .nav-menu ul li a{
@@ -52,10 +48,6 @@ body{
     box-shadow: 0px 4px 3px rgba(0, 0, 0,.5);
 }
 
-.btn-menu{
-    display: block;
-}
-
 .nav-menu ul{
     display: flex;
     align-items: center;
@@ -66,12 +58,14 @@ body{
 
 .nav-menu a:hover{
     color: #32BBE2;
+    transition: all .5s;
 }
 .nav-menu li:last-child{
     background-color: #32BBE2;
     border: 2px solid #32BBE2;
     padding: .25 rem .75rem;
     border-radius: .2rem;
+    transition: all .25s;
 }
 
 li:last-child:hover{
@@ -86,6 +80,10 @@ li:last-child:hover{
 
 .menu-icon, #check{
     display: none;
+    position: absolute;
+    right: 1rem;
+    top: .5rem;
+
 }
 
 @media (max-width:768px) {
@@ -104,7 +102,7 @@ li:last-child:hover{
     }
 
     .menu-icon{
-        display: block;
+        display: flex;
         cursor: pointer;
     }
 
@@ -138,8 +136,10 @@ li:last-child:hover{
         overflow-y: hidden;
     }
 
-    .cards-amplied{
-        max-width: 500px;
-    }
+}
 
+@media (max-width: 600px) {
+    html{
+        overflow-x: hidden;
+      }
 }

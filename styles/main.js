@@ -15,7 +15,7 @@ function detectId(id) {
         .glass {
             filter: blur(5px);
             pointer-events: none;
-            transition: all 1s ease;
+            transition: all 0.3s ease;
         }
         .post-b article p{
             overflow-y: visible;
@@ -36,7 +36,6 @@ function detectId(id) {
             card.innerHTML = `
             #post2-b {
                 display: grid;
-                transition: all 0.3s ease;
             }
             `;
             document.head.appendChild(card);
@@ -45,7 +44,6 @@ function detectId(id) {
             card.innerHTML = `
             #post3-b {
                 display: grid;
-                transition: all 0.3s ease;
             }
             `;
             document.head.appendChild(card);
