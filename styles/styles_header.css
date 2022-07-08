@@ -7,10 +7,14 @@
     list-style: none;
     scroll-behavior: smooth;
     filter: none;
+    
 }
 
 body{
     background-color: #efefef;
+    white-space:unset;
+    overflow-x: hidden;
+    
 }
 
 .video-header{
@@ -138,14 +142,11 @@ li:last-child:hover{
 
 }
 
-@media (max-width: 600px) {
-    html{
-        overflow-x: hidden;
-      }
-}
-
-@media (max-width:350px) {
-    .video-header{
-        max-width: 250px;
+@media (max-width:375px) {
+    .video-header video{
+        max-width: 300px;
     }
+    html{
+        overflow-x: none;
+      }
 }

@@ -165,8 +165,12 @@
     }
 }
 
-@media (max-width:350px) {
-    .post{
+@media (max-width:375px) {
+    .post video{
         max-width: 250px;
-    }
+   }
+
+   .post{
+    width: 250px;
+   }
 }
