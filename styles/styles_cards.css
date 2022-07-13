@@ -156,9 +156,10 @@
     }
 
     .cards-amplied article p{
-        margin: 3px;
+        margin: 0px;
         margin-top: -2rem;
-        padding: -.5rem -5rem 2rem;
+        padding-top: 0rem;
+        padding-bottom: 2rem;
         height: 400px;
         width: 270px;
         overflow: scroll;
@@ -173,4 +174,33 @@
    .post{
     width: 250px;
    }
+}
+@media (max-height:510px) {
+    .cards-amplied article{
+        height: 350px;
+    }
+    .cards-amplied article p{
+        margin: 0px;
+        margin-top: -2rem;
+        padding-top: 0rem;
+        padding-bottom: 2rem;
+        height: 250px;
+        width: 270px;
+        overflow: scroll;
+    }
+}
+
+@media (max-height:375px) {
+    .cards-amplied article{
+        height: 250px;
+    }
+    .cards-amplied article p{
+        margin: 0px;
+        margin-top: -2rem;
+        padding-top: 0rem;
+        padding-bottom: 2rem;
+        height: 150px;
+        width: 270px;
+        overflow: scroll;
+    }
 }
