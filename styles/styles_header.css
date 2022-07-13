@@ -142,11 +142,11 @@ li:last-child:hover{
 
 }
 
-@media (max-width:375px) {
+@media (max-width:500px) {
     .video-header video{
         max-width: 300px;
     }
-    html{
-        overflow-x: none;
-      }
+    .video-header{
+        padding: 0;
+    }
 }
