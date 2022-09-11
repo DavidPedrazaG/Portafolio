@@ -1,10 +1,8 @@
-// $(document).ready(main);
+let contador = 1;
+let style = document.createElement('style');
+let card = document.createElement('style');
 
-var contador = 1;
-var style = document.createElement('style');
-var card = document.createElement('style');
-var contadormenu = 1;
-
+//Al hacer click en botones especificos proyecta las tarjetas ampliadas y hace un efecto blur en el cuerpo de la pagina
 function detectId(id) {
     if(contador == 1){
         style.innerHTML = `

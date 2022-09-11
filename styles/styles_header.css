@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
 
 *{
     margin: 0;
@@ -7,33 +8,36 @@
     list-style: none;
     scroll-behavior: smooth;
     filter: none;
+    user-select: none;
     
 }
 
+/*?Color de fondo*/
 body{
     background-color: #efefef;
-    white-space:unset;
-    overflow-x: hidden;
     
 }
 
+/*?Color de la sección del video*/
 .video-header{
     background-color: #32BBE2;
     width: 100%;
 
 }
 
+/*?Tamaño principal del video*/
 .video-header video{
-    max-width: 460px;
-    z-index: 5;
+    max-width: 600px;
 }
 
+/*?Posicion de la barra de navegacion*/
 .menu{
     z-index: 10;
-    top: 0;
+    top: -.001rem;
     position: sticky;
 }
 
+/*?Color y estilo de de la barra (letra)*/
 .nav-menu ul li a{
     font-family: 'Roboto', sans-serif;
     color: #fff;
@@ -43,6 +47,7 @@ body{
     width: 35px;
 }
 
+/*?Estilo de la barra*/
 .menu{
     background: #202021;
     display: flex;
@@ -52,6 +57,7 @@ body{
     box-shadow: 0px 4px 3px rgba(0, 0, 0,.5);
 }
 
+/*?Configuracion de la barra, centra los elementos*/
 .nav-menu ul{
     display: flex;
     align-items: center;
@@ -60,28 +66,30 @@ body{
     margin-right: 1.5rem;
 }
 
+/*?Estilo de los botones*/
 .nav-menu a:hover{
     color: #32BBE2;
     transition: all .5s;
 }
-.nav-menu li:last-child{
+
+/*?Estilo de la seccion de contacto*/
+.nav-menu li #me{
     background-color: #32BBE2;
     border: 2px solid #32BBE2;
     padding: .25 rem .75rem;
     border-radius: .2rem;
     transition: all .25s;
 }
-
-li:last-child:hover{
+li #me:hover{
     background: transparent;
     border: 2px solid #32BBE2
 }
 
+/*?Tamaño del icono de menú*/
 .menu-icon img{
     width: 25px;
     height: 25px;
 }
-
 .menu-icon, #check{
     display: none;
     position: absolute;
@@ -96,10 +104,10 @@ li:last-child:hover{
         margin-top: 3rem;
     }
     .menu{
-        margin-top: -21.8rem;
+        margin-top: -25.2rem;
     }
     .content{
-        margin-top: 20rem;
+        margin-top: 23.4rem;
     }
     .checkbtn{
         display: block;
@@ -108,6 +116,10 @@ li:last-child:hover{
     .menu-icon{
         display: flex;
         cursor: pointer;
+    }
+
+    .video-header video{
+        max-width: 560px;
     }
 
     .nav-menu ul{
@@ -128,7 +140,7 @@ li:last-child:hover{
         margin: 0;
     }
 
-    .nav-menu ul li:last-child{
+    .nav-menu ul li #me{
         background: none;
         padding: 1rem;
         border: 0;
@@ -139,7 +151,9 @@ li:last-child:hover{
         white-space:unset;
         overflow-y: hidden;
     }
-
+    .menu-icon{
+        top: 1rem;
+    }
 }
 
 @media (max-width:500px) {

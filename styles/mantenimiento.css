@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+*{
+    background-color: #32BBE2;
+}
+
+/*?Color de la sección del video*/
+.video-header{
+    background-color: #32BBE2;
+    width: 100%;
+
+}
+
+.texto{
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #ffffff;
+}
+
+img{
+    margin-left: 45%;
+    width: 50px;
+}
+
+h1, h4{
+    font-family: 'Roboto';
+}
+
+p{
+    font-family: 'Montserrat';
+}
+
+/*?Tamaño principal del video*/
+.video-header video{
+    max-width: 600px;
+}
+
+@media (max-width:768px) {
+    .video-header video{
+        max-width: 560px;
+    }
+}
+
+@media (max-width:500px) {
+    .video-header video{
+        max-width: 300px;
+    }
+}
+
+@media (max-width:350px) {
+    .video-header video{
+        max-width: 200px;
+    }
+}
