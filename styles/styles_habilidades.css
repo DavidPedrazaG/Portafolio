@@ -6,8 +6,13 @@
     background-color: #fff;
 }
 
+a.imgHabilidades{
+    max-height: 200px;
+}
+
 .imgHabilidades img{
     width: 150px;
+    height: 150px;
     padding: .1px;
     border-radius: 2rem;
     cursor: pointer;
@@ -47,6 +52,21 @@
 .habilidadesContainer #hbd6{
     box-shadow: 0 0 33px #1474c4;
     background-color: #a1d3f5;
+}
+
+.habilidadesContainer #hbd7{
+    box-shadow: 0 0 33px #474a75;
+    background-color: #727ac9;
+}
+
+.habilidadesContainer #hbd8{
+    box-shadow: 0 0 33px #00618A;
+    background-color: #f8b852;
+}
+
+.habilidadesContainer #hbd9{
+    box-shadow: 0 0 33px #00618A;
+    background-color: #4787bb;
 }
 
 .frontend, .backend, .personales{
