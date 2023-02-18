@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="media/img/logoAzul.png">
+        <link rel="stylesheet" href="styles/styles_header.css">
+        <link rel="stylesheet" href="styles/styles_proyectos.css">
+        <link rel="stylesheet" href="styles/styles_habilidades.css">
+        <link rel="stylesheet" href="styles/styles_sobremi.css">
+        <title>Portafolio | David Pedraza G</title>
+    </head>
+    <body>    
+        <!-- ?Video de inicio -->
+        <header class="video-header glass">
+            <section>
+                <center><video autoplay loop muted src="media/video/header.mp4" type="video/mp4"></video></center>
+            </section>
+        </header>
+        <!-- ?Video de inicio -->
+
+        <!-- ?Barra de navegación -->
+        <header class="menu glass">
+            <div class="logo-header">
+                <a href="#"><img src="media/img/logoAzul.png" alt=""></a>
+            </div>
+            <div class=nav-menu>
+
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="menu-icon"><img src="media/img/menu.png" alt=""></i>
+                </label>
+
+                <ul>
+                    <li><a href="#Proyectos">Portafolio</a></li>
+                    <li><a href="#Habilidades">Habilidades</a></li>
+                    <li><a href="#SobreMi" id="me">Sobre mí</a></li>
+                    <li><a href="">Experiencia</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </div>
+            <div></div>
+        </header>
+        <!-- ?Barra de navegación -->
+
+        <div class="content">
+            <!-- ?Sección de proyectos -->
+            <div id="Proyectos">
+                <!-- ?Tarjetas en la sección de proyectos -->
+                <section class="glass ">
+                    <br><br><br><br><br><h1 class="titulo">Portafolio</h1><br>
+                    <section class="cards">
+                        <article class="post" >
+                            <h2>Esteban's Page</h2>
+                            <p>Pagina web realizada a un estudiante</p>
+                            <video autoplay loop muted src="media/video/EstebansPage.mp4" type="video/mp4"></video>
+                            <center><a id="post1-s" class="video-card" onclick="detectId('post1-s')">Ver más</a></center>
+                        </article>
+                        <article class="post" >
+                            <h2>Titulo de mi post 2</h2>
+                            <p>Descripción de mi post 2</p>
+                            <img src="styles/img/monster.png" width="400" alt="">
+                            <center><a  id="post2-s" class="video-card" onclick="detectId('post2-s')">Ver más</a></center>
+                        </article>
+                        <article class="post" >
+                            <h2>Titulo de mi post 3</h2>
+                            <p>Descripción de mi post 3</p>
+                            <img src="styles/img/guitarra.png" width="400" alt="">
+                            <center><a  id="post3-s" class="video-card" onclick="detectId(this.id)">Ver más</a></center>
+                        </article>
+                    </section>                    
+                </section>
+                <!-- ?Tarjetas ampliadas -->
+                <section class="cards-amplied">
+                    <article class="post-b" id="post1-b">
+                        <video autoplay loop muted src="media/video/EstebansPage.mp4" type="video/mp4"></video>
+                        <div>
+                            <a><span><img src="media/img/close.webp" alt="cerrar" onclick="detectId()"></span><h2>Estebans's Page</h2></a>
+                            <p>El 03 de julio del año 2022, un estudiante de la carrera de Diseño Visual Digital se comunicó conmigo para saber si podría realizarle una página web con ciertas especificaciones de diseño entregadas en un PDF (el cual se encuentra en el repositorio de GitHub), además si podría subir el resultado final a la web. La página cuenta con cuatro secciones principales con otras tres extras sin acceso a través de la barra de navegación. Algunos de los botones como los de las redes sociales y comunicación no están disponibles por petición del cliente, ya que decidió no añadir un enlace en ellos. Por último, he usado el servicio de hosting gratuito de GitHub Pages para subir la página a internet a través de la cuenta del cliente, sin embargo, el repositorio público para inspeccionar la página web se encuentra en mi cuenta. <br><br><br><br><span><a target="_blank" href="https://estebanobando.github.io/Esteban/" class="linkPage"><img src="media/img/webIcon.jpg"><span class="text1">Link de la pagina</span></a><a target="_blank" href="https://github.com/DavidPedrazaG/Esteban" class="linkGit"><img src="media/img/gitHubIcon.png"><span class="text2">Repositorio</span></a></span></p>
+                        </div>
+                    </article>
+                    <article class="post-b" id="post2-b">
+                        <video autoplay loop muted src="media/video/EstebansPage.mp4" type="video/mp4"></video>
+                        <div>
+                            <a><span><img src="media/img/close.webp" alt="" onclick="detectId()"></span><h2>Titulo de mi post 2</h2></a> 
+                            <p>Texto del articulo que hay acá y es texto de prueba.<br><br><br><br><span><a target="_blank" href="https://www.youtube.com/" class="linkPage"><img src="media/img/webIcon.jpg"><span class="text1">Link de la pagina</span></a><a target="_blank" href="https://www.youtube.com/" class="linkGit"><img src="media/img/gitHubIcon.png"><span class="text2">Repositorio</span></a></span></p>
+                        </div>
+                    </article>
+                    <article class="post-b" id="post3-b">
+                        <video autoplay loop muted src="media/video/EstebansPage.mp4" type="video/mp4"></video>
+                        <div>
+                            <a><span><img src="media/img/close.webp" alt="" onclick="detectId()"></span><h2>Titulo de mi post 3</h2></a> 
+                            <p>Texto del articulo que hay acá y es texto de prueba.<br><br><br><br><span><a target="_blank" href="https://www.youtube.com/" class="linkPage"><img src="media/img/webIcon.jpg"><span class="text1">Link de la pagina</span></a><a target="_blank" href="https://www.youtube.com/" class="linkGit"><img src="media/img/gitHubIcon.png"><span class="text2">Repositorio</span></a></span></p>
+                        </div>
+                    </article>
+                </section>
+            </div>
+            <!-- ?Sección de proyectos -->
+            
+            <div><!-- ?espaciado -->
+                <br><br><br><br><br><br><br id="Habilidades">
+            </div><!-- ?espaciado -->
+
+            <!-- ?Sección de habilidades -->
+            <div class="habilidades glass">
+                <br><br><br><br><h1 class="titulo">Habilidades</h1><br><br>
+                <div class="habilidadesContainer">
+                    <div class="frontend">
+                        <div><h2>FrontEnd<br><hr></h2></div>
+                        <div class="hbd-img">
+                            <a class="imgHabilidades"><img id="hbd1" src="media/img/Habilidades/html.png"><span><progress max="100" value="25"></progress><p>HTML</p></span></a>
+                            <a class="imgHabilidades"><img id="hbd2" src="media/img/Habilidades/css.png"><span><progress class="middle" max="100" value="25"></progress><p>CSS</p></span></a>
+                            <a class="imgHabilidades"><img id="hbd3" src="media/img/Habilidades/js.png"><span><progress class="middle" max="100" value="25"></progress><p>JavaScript</p></span></a>
+                            <a class="imgHabilidades"><img id="hbd4" src="media/img/Habilidades/design.png"><span><progress max="100" value="25"></progress><p>Diseño</p></span></a>
+                            <a class="imgHabilidades"><img id="hbd4" src="media/img/Habilidades/design.png"><span><progress max="100" value="25"></progress><p>Diseño</p></span></a>
+                        </div>
+                    </div>
+                    <div class="personales">
+                        <div><h2>Personales<br><hr></h2></div>
+                        <div class="hbd-plb">
+                            <a class="plbHabilidades"><h3>Trabajo en Equipo</h3></a>
+                            <a class="plbHabilidades"><h3>Comunicación Asertiva</h3></a>
+                            <a class="plbHabilidades"><h3>Escucha Activa</h3></a>
+                        </div>
+                    </div>
+                    <div class="backend">
+                        <div><h2>BackEnd<br><hr></h2></div>
+                        <div class="hbd-img">
+                            <a class="imgHabilidades"><img id="hbd5" src="media/img/Habilidades/python.png"><span><progress max="100" value="25"></progress><p>Python</p></span></a>
+                            <a class="imgHabilidades"><img id="hbd6" src="media/img/Habilidades/java.png"><span><progress class="middle" max="100" value="25"></progress><p>Java</p></span></a>
+                            <a class="imgHabilidades"><img id="hbd7" src="media/img/Habilidades/php.png"><span><progress class="middle" max="100" value="25"></progress><p>PHP</p></span></a>
+                            <a class="imgHabilidades"><img id="hbd8" src="media/img/Habilidades/mysql.png"><span><progress class="middle" max="100" value="25"></progress><p>MySQL</p></span></a>
+                            <a class="imgHabilidades"><img id="hbd9" src="media/img/Habilidades/postgresql.png"><span><progress class="middle" max="100" value="25"></progress><p>PostgreSQL</p></span></a>
+                        </div>
+                    </div>
+                    <br><br>
+                </div>
+            </div>
+            <!-- ?Sección de habilidades -->
+
+            <div><!-- ?espaciado -->
+                <br id="SobreMi">
+            </div><!-- ?espaciado -->
+
+            <!-- ?Sección sobre mí -->
+            <div class="glass">
+                <br><br><br><h1 class="titulo" style="color: #32BBE2;">Sobre Mí</h1><br><br>
+                <div class="sobreMiContainer">
+                    <div class="card">
+                        <div class="card2">
+                        </div>
+                    </div>               
+                </div>
+            </div>
+            <!-- ?Sección sobre mí -->
+            
+        </div>
+        <script src="js/main.js"></script>
+    </body>
+</html>
